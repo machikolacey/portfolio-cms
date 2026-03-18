@@ -1,0 +1,13 @@
+# Django
+django-api/venv/
+django-api/__pycache__/
+django-api/db.sqlite3
+django-api/media/
+
+# React
+frontend/node_modules/
+frontend/dist/
+
+# その他
+.env
+*.pyc
