@@ -1,3 +1,7 @@
+import React from 'react'
+
+export default function Footer() {
+  return (
 <footer>
   <div className="container">
     <div id="footer-details" className="row">
@@ -43,3 +47,6 @@
     </div>
   </div>
 </footer>
+  )
+}
+
