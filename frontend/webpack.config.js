@@ -26,10 +26,15 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/template.html',
-    }),
-  ],
+      new HtmlWebpackPlugin({
+        template: './src/template.html',
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: 'public', to: '' }
+        ],
+      }),
+    ],
   devServer: {
       port: 3000,
       historyApiFallback: true,
