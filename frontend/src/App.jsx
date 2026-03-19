@@ -1,32 +1,27 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Nav from './components/Nav'
+import Home from './pages/Home'
+import Overview from './pages/Overview'
+import Experiences from './pages/Experiences'
+import SkillSet from './pages/SkillSet'
+import EducationInterests from './pages/EducationInterests'
+import NotFound from './pages/NotFound'
 
 export default function App() {
-  const [projects, setProjects] = useState([])
-
-  useEffect(() => {
-    axios.get('https://web-production-8f62.up.railway.app/api/projects/')
-      .then(res => setProjects(res.data))
-      .catch(err => console.error(err))
-  }, [])
-
   return (
-    <div>
-      <h1>Machiko Lacey-Kimura | Web Developer</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
-        {projects.map(project => (
-          <div key={project.id} style={{ width: '250px', border: '1px solid #ccc', padding: '15px', borderRadius: '8px' }}>
-            {project.image && <img src={project.image} alt={project.name} style={{ width: '100%' }} />}
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            {project.link ? (
-              <a href={project.link} target="_blank" rel="noreferrer">View website</a>
-            ) : (
-              <span>Links available on request</span>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/overview" element={<Overview />} />
+        <Route path="/experiences" element={<Experiences />} />
+        <Route path="/skill-set" element={<SkillSet />} />
+        <Route path="/education-interests" element={<EducationInterests />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   )
 }

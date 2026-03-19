@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font-family:"Lato", sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+}
+p, ul li{
+    font-size:1.1rem;
+    color: #e6edf3;
+}
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-secondary.dropdown-toggle {
+    color: #e6edf3;
+    background-color: transparent;
+    border: none;
+    outline:none;
+}
+
+/*--------------------------------------Global */
+a {
+    color: #f79621;
+}
+
+.card {
+    background-color:#161b22;
+    border: 0.5px solid #21262d;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1.5px solid #f79621;
+    color: #f79621;
+}
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #f79621;
+    border-color: #f79621;
+    color: #0d1117;
+}
+.btn-secondary {
+    color: #8b949e;
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 10px;
+}
+.btn-secondary:hover {
+    color: #e6edf3;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+}
+
+.action-buttons{
+    margin-bottom: 10px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4{
+    margin-bottom:17px;
+}
+.main-content h2{
+    color: #f79621;
+}
+
+legend{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-top: 45px;
+    border-bottom: 4px solid #21262d;
+    color: #8b949e;
+}
+
+fieldset {
+    margin: 20px 0 0 0;
+}
+
+.main-content h1.heading{
+    margin-bottom:20px;
+}
+.fa{
+    margin: 0 10px 0 10px;
+}
+
+.row img{
+    max-width:100%;
+}
+
+.progress-bar{
+    background-color: #f79621;
+    background-image: none;
+}
+.bg-success{
+    background-color: #238636;
+    background-image: none;
+}
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.95rem;
+    font-weight: 700;
+    background-color: #21262d;
+    border-radius: .25rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.general-sub {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+}
+.inline-block {
+    display: inline-block;
+}
+.row-table {
+    display: table;
+}
+
+#main-container h1, 
+#main-container h2,
+#main-container h3,
+#main-container h4,
+#main-container h5,
+#main-container h6{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+#main-container h3 {
+    padding-bottom: 10px;
+    margin-top: 45px;
+    border-bottom: 1px solid #21262d;
+    color: #e6edf3;
+}
+
+h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/*--------------------------------------Navbar */
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #8b949e;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f79621;
+    border-bottom: 3px solid #f79621;
+}
+
+/* ★ Key change: navbar is now dark, not orange */
+.bg-light {
+    padding: 5px 0;
+    background: #161b22 !important;
+    min-height: 59px;
+    border-bottom: 1px solid #21262d;
+}
+
+/*--------------------------------------Fonts */
+h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 2.4rem;
+}
+.progress{
+    margin-bottom: 5px;
+}
+
+/*--------------------------------------Header */
+.skills{
+    height: 200px;
+}
+header{ background: #0d1117; }
+
+.header-middle{
+    overflow: hidden;
+}
+.header-middle-inner{
+    min-height: 300px;
+}
+.header-skills {
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 500px;
+    height: 170px;
+    padding-top: 25px;
+    padding-left: 10px;
+    background-color: transparent;
+    top: 30px;
+    left: 50px;
+    position: absolute;
+    color: #fff;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, transparent 100%);
+    border-left: 3px solid #f79621;
+    box-shadow: none;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+.header-skills p {
+   margin-top: 20px;
+   color: #e6edf3;
+}
+.header-skills img{
+    max-width: 35px;
+    display: block;
+    margin: 0 auto;
+}
+.header-skills-wrapper{
+    position: relative;
+}
+
+@keyframes hero-move{
+    from{ transform: scale(1); }
+    to{ transform: scale(1.1); }
+}
+@keyframes hero-zoom{
+    from{ transform: scale(1); }
+    to{ transform: scale(1.1); }
+}
+
+.profile{
+ 
+}
+
+.section-column ul > li{
+    margin: 0 0 20px 0;
+}
+.section-column a{
+    color: #f79621;
+}
+
+/*--------------------------------------Left Column */
+.bg-color-personal-info {
+    background-color: #161b22;
+}
+.section-column {
+    display: table-cell;
+    padding: 0 30px 0px;
+    float: none;
+}
+
+.heading{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #f79621;
+}
+
+/* ----------------------------------------Homepage */
+.home-row{
+    margin: 0 0 40px 0;
+}
+.home-row h4{
+    font-weight: 700;
+    margin: 10px 0;
+    color: #e6edf3;
+}
+.home-row img {
+   box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+   border: 0.5px solid #21262d;
+}
+
+/* ----------------------------------------Footer */
+footer{
+    background: #161b22;
+    border-top: 1px solid #21262d;
+    padding: 40px 20px;
+    margin-top: 25px;
+    color: #8b949e;
+}
+footer ul{
+    list-style: none;
+    margin: 20px 0 0 0;
+}
+footer a {
+    color: #f79621;
+}
+
+/* ----------------------------------------Work History */
+.history-heading {
+    margin-bottom: 50px;
+}
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    border-left: 1px solid #21262d;
+    font-size: 1.2rem;
+}
+.timeline-item h3{
+    font-weight: 700;
+    color: #e6edf3;
+}
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+    color: #8b949e;
+}
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    color: #f79621;
+}
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #f79621;
+}
+.history-items {
+    margin-bottom: 30px;
+}
+
+.skillset .fa{ display: block; }
+
+.photo{
+    clear: both;
+    line-height: 0;
+    column-gap: 0;
+}
+#photo-2{ column-count: 2; }
+#photo-4{ column-count: 4; }
+.photo img{ width: 100%; }
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+.education-logo{
+    margin: 0 0 10px 0;
+}
+
+/*--------------------------------------Footer */
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #161b22;
+}
+
+/*--------------------------------------Responsive */
+@media screen and (max-width:1200px) and (min-width:460px){
+    .btn {
+        padding: .250rem .6rem;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        width: 100%;
+    } 
+    .btn-secondary{
+        text-align: left;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:794px){
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 10px;
+    }
+    .btn-secondary{
+        padding-left: 0;
+    } 
+}
+@media screen and (max-width:768px){
+    ul.contact li{
+        display: inline-block;
+    }
+    .general-sub {
+        margin-top: 20px;
+    }
+    .header-skills {
+        font-size: 1rem;
+        max-width: 90%;
+        position: relative;
+        max-width: 90%;
+        left: 5%;
+    }
+    .header-skills h3 {
+        font-size: 1rem;
+    }
+    .timeline-item h3 {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1480px;
+    }
+}
+
+/* ============================================================
+   HERO SECTION CSS - Fixed version
+   Add to the END of your style.css
+   ============================================================ */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  background: #0d1117;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Animated grid */
+.hero-bg-grid {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;  /* inset の代わり（互換性） */
+  background-image:
+    linear-gradient(rgba(247, 150, 33, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(247, 150, 33, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: heroGridMove 20s linear infinite;
+  pointer-events: none;
+}
+@keyframes heroGridMove {
+  from { background-position: 0 0; }
+  to   { background-position: 40px 40px; }
+}
+
+/* Orange glow */
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(247, 150, 33, 0.08) 0%, transparent 70%);
+  top: -150px;
+  left: -150px;
+  animation: heroGlowPulse 4s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes heroGlowPulse {
+  0%, 100% { transform: scale(1);   opacity: 0.6; }
+  50%       { transform: scale(1.2); opacity: 1; }
+}
+
+/* Left accent line */
+.hero-border-left {
+  position: absolute;
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #f79621, transparent);
+  animation: heroBorderPulse 3s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes heroBorderPulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 1; }
+}
+
+/* Scanline overlay */
+.hero-scanline {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px, transparent 3px,
+    rgba(0,0,0,0.04) 3px, rgba(0,0,0,0.04) 4px
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Canvas */
+#hero-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 4;  /* content must be above scanline(z3) */
+  padding: 48px 56px;
+}
+
+/* --- テキスト要素: !important でリセットCSSに勝つ --- */
+
+.hero-label {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 11px !important;
+  letter-spacing: 5px !important;
+  color: #f79621 !important;
+  text-transform: uppercase !important;
+  margin: 0 0 12px !important;
+  opacity: 0;
+  animation: heroFadeUp 0.6s 0.2s forwards !important;
+}
+
+.live-dot {
+  display: inline-block !important;
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background: #3fb950 !important;
+  margin-right: 8px !important;
+  vertical-align: middle !important;
+  animation: liveDotPulse 1.5s ease-in-out infinite !important;
+}
+@keyframes liveDotPulse {
+  0%, 100% { box-shadow: 0 0 0 0   rgba(63, 185, 80, 0.5); }
+  50%       { box-shadow: 0 0 0 6px rgba(63, 185, 80, 0); }
+}
+
+.hero-name {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  color: #e6edf3 !important;
+  margin: 0 0 8px !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase !important;
+  opacity: 0;
+  animation: heroFadeUp 0.6s 0.4s forwards !important;
+}
+.hero-name span {
+  color: #f79621 !important;
+}
+
+.hero-tagline {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 12px !important;
+  letter-spacing: 5px !important;
+  color: #8b949e !important;
+  text-transform: uppercase !important;
+  margin: 0 0 28px !important;
+  opacity: 0;
+  animation: heroFadeUp 0.6s 0.6s forwards !important;
+}
+
+.hero-typing-wrap {
+  font-family: monospace !important;
+  font-size: 14px !important;
+  color: #58a6ff !important;
+  background: rgba(22, 27, 34, 0.85) !important;
+  border: 0.5px solid #30363d !important;
+  border-radius: 6px !important;
+  padding: 10px 16px !important;
+  display: inline-block !important;
+  min-width: 300px !important;
+  opacity: 0;
+  animation: heroFadeUp 0.6s 0.8s forwards !important;
+}
+
+.hero-cursor {
+  display: inline-block !important;
+  width: 2px !important;
+  height: 14px !important;
+  background: #f79621 !important;
+  margin-left: 2px !important;
+  vertical-align: middle !important;
+  animation: heroCursorBlink 0.8s step-end infinite !important;
+}
+@keyframes heroCursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.hero-tags {
+  margin-top: 20px !important;
+  display: flex !important;
+  gap: 8px !important;
+  flex-wrap: wrap !important;
+  opacity: 0;
+  animation: heroFadeUp 0.6s 1.0s forwards !important;
+}
+.hero-tag {
+  font-size: 11px !important;
+  padding: 4px 14px !important;
+  border-radius: 20px !important;
+  border: 0.5px solid #30363d !important;
+  color: #8b949e !important;
+  background: rgba(22, 27, 34, 0.6) !important;
+  list-style: none !important;
+}
+.hero-tag:hover {
+  border-color: #f79621 !important;
+  color: #f79621 !important;
+}
+
+/* Scroll indicator */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  right: 28px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  animation: heroFadeUp 0.6s 1.4s forwards !important;
+}
+.hero-scroll-text {
+  font-size: 9px !important;
+  letter-spacing: 3px !important;
+  color: #8b949e !important;
+  text-transform: uppercase !important;
+  writing-mode: vertical-rl !important;
+}
+.hero-scroll-line {
+  width: 1px !important;
+  height: 40px !important;
+  background: linear-gradient(to bottom, #f79621, transparent) !important;
+  animation: heroScrollPulse 2s ease-in-out infinite !important;
+}
+@keyframes heroScrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 1; }
+}
+
+/* Shared fade-up keyframe */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 36px 24px 36px 48px !important;
+  }
+  .hero-name {
+    font-size: 30px !important;
+  }
+  .hero-typing-wrap {
+    min-width: unset !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .hero-border-left {
+    left: 16px !important;
+  }
+  .hero-scroll-indicator {
+    display: none !important;
+  }
+}
+
+
+/* コンテナを基準点にする */
+.hero-container {
+  position: relative;
+}
+
+/* viewportではなくコンテナの左端に貼り付く */
+.hero-border-left {
+  position: absolute;
+  left: 0;        /* ← 32px から変更 */
+  top: -48px;     /* hero-content の上パディング分だけ上に伸ばす */
+  bottom: -48px;  /* 同じく下にも */
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #f79621, transparent);
+  animation: heroBorderPulse 3s ease-in-out infinite !important;
+  pointer-events: none;
+}
+
+.hero-image-right {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    width: 55%;
+
+    background-size: cover;
+    background-position: center center;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.5) 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.15) 50%, rgb(15 65 55) 100%);
+    opacity: 0.5;
+    /* mix-blend-mode: luminosity; */
+    animation: heroImgFadeIn 1.5s 0.3s ease forwards;
+}
+
+@keyframes heroImgFadeIn {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 0.5; transform: translateX(0); }
+}
