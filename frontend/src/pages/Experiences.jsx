@@ -26,19 +26,22 @@ export default function Experiences() {
 
             <h3>Web Developer &mdash; Bespoke CMS &amp; Full-Stack Development</h3>
             <div className="row">
-              <div className="col-sm-12">
+            <div className="col-sm-4">
+                <img src="/assets/images/example-image-3.jpg" alt="Storm12 Ltd" />
+            </div>
+            <div className="col-sm-8">
                 <h4>Storm12 Ltd &mdash; <small>Jan 2022 &ndash; Apr 2025 | UK</small></h4>
                 <ul>
-                  <li>Architected and developed bespoke CMS solutions from scratch using vanilla PHP.</li>
-                  <li>Designed and implemented a modular block-based content management system.</li>
-                  <li>Developed user behaviour tracking and personalisation systems using cookies.</li>
-                  <li>Implemented Ajax-powered real-time search functionality.</li>
-                  <li>Created custom animations using JavaScript and Particle.js.</li>
-                  <li>Built internal systems using React.</li>
-                  <li>Managed full project lifecycle from requirements to deployment and support.</li>
+                <li>Architected and developed bespoke CMS solutions from scratch using vanilla PHP.</li>
+                <li>Designed and implemented a modular block-based content management system.</li>
+                <li>Developed user behaviour tracking and personalisation systems using cookies.</li>
+                <li>Implemented Ajax-powered real-time search functionality.</li>
+                <li>Created custom animations using JavaScript and Particle.js.</li>
+                <li>Built internal systems using React.</li>
+                <li>Managed full project lifecycle from requirements to deployment and support.</li>
                 </ul>
                 <p><strong>Skills:</strong> PHP, JavaScript, React, MySQL</p>
-              </div>
+            </div>
             </div>
 
             <h3>Web Developer &mdash; Veterinary Education Platform</h3>
