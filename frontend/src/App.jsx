@@ -5,7 +5,7 @@ export default function App() {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
-    axios.get('/api/projects/')
+    axios.get('https://web-production-8f62.up.railway.app/api/projects/')
       .then(res => setProjects(res.data))
       .catch(err => console.error(err))
   }, [])
