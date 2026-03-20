@@ -4,11 +4,11 @@ export default function Header() {
   useEffect(() => {
     // Typing animation
     const phrases = [
-      'const developer = "full-stack";',
       'skills: [PHP, React, Python];',
       'languages: ["English", "日本語"];',
-      'experience: "10+ years";',
-      'status: "open to work";'
+      'status: "React + Python CMS done";',
+      'const developer = "full-stack";',
+      'experience: "18+ years";',
     ]
     let phraseIndex = 0
     let charIndex = 0

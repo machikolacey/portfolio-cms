@@ -715,7 +715,7 @@ footer a {
     top: 0;
     bottom: 0;
     width: 55%;
-
+    background-image: url(/assets/images/hero-space1.png);
     background-size: cover;
     background-position: center center;
     mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.5) 100%);
